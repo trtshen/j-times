@@ -55852,7 +55852,7 @@ var EventPage = (function () {
     return EventPage;
 }());
 EventPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/event/event.html"*/'<ion-header>\n  <ion-navbar></ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    {{event.content}}\n  </p>\n\n  <ion-card *ngFor="let item of event.items">\n    <img [src]="item.img">\n    <ion-card-content>\n      {{item.content}}\n    </ion-card-content>\n  </ion-card>\n\n  <ion-list>\n    <button ion-item (click)="view(event.exhibits)">Exhibits</button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/event/event.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/event/event.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      {{event.title}}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <p>\n    {{event.content}}\n  </p>\n\n  <ion-card *ngFor="let item of event.items">\n    <img [src]="item.img">\n    <ion-card-content>\n      {{item.content}}\n    </ion-card-content>\n  </ion-card>\n\n  <ion-list>\n    <button ion-button block (click)="view(event.exhibits)">Exhibits</button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/event/event.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
@@ -55944,7 +55944,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */])
 ], MapPage.prototype, "el", void 0);
 MapPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Map</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/map/map.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/map/map.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Map</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Volumes/CSHEN/Workspaces/www/j-times/src/pages/map/map.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_map_module_map_service__["a" /* MapService */]])
 ], MapPage);
